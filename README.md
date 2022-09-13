@@ -2,7 +2,9 @@
 
 Other files that are necessary, but aren't in the repo because they're in the Thesan-1 tau directory:
 model_parameters_5d_{5.5, 6.6}.obj
+
 make_LF_models_5d_new.py
+
 X_emulated.py
 
 * Run make_LF_models_5d_new.py first, which creates the model LFs to calibrate to. Change parameter_file depending on the redshift, and the snap at the end when calling write_lf_test_emulators, and also the directory name to write files to in that function
