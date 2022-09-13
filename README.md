@@ -1,9 +1,9 @@
 # LyaCalibration
 
 Other files that are necessary, but aren't in the repo because they're in the Thesan-1 tau directory:
-* model_parameters_5d_{5.5, 6.6}.obj
-* make_LF_models_5d_new.py
-* X_emulated.py
+- model_parameters_5d_{5.5, 6.6}.obj
+- make_LF_models_5d_new.py
+- X_emulated.py
 
 
 
