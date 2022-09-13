@@ -1,11 +1,16 @@
 # LyaCalibration
 
+Other files that are necessary, but aren't in the repo because they're in the Thesan-1 tau directory:
+model_parameters_5d_{5.5, 6.6}.obj
+make_LF_models_5d_new.py
+X_emulated.py
+
 * Run make_LF_models_5d_new.py first, which creates the model LFs to calibrate to. Change parameter_file depending on the redshift, and the snap at the end when calling write_lf_test_emulators, and also the directory name to write files to in that function
 * Run train_emulator_5d-{redshift}.ipynb up til the “Penalty functions” header (can probably change directory or file names)
     * These use the model_parameters files, which are the same as before
 * Run make{5, 6}predvaluesfrom7params.py, which uses pred_params_5d.obj (doesn’t need to change) and the pickled trained LF emulator to make pred values for all the pred params
 * Keep running train_emulator_5d-{redshift}.ipynb until the last plot before the “idk hist stuff aka sweeps” header. This plot has the real calculated best fit from the best fit parameters
-* Run bestfit to calculate the best fit. Change the params variable to the best fit parameters, the snap when calling write_lf_test_emulators, and maybe the label (which I mostly used to record the way I calculated the penalty)
+* Run best_fit_5d.py to calculate the best fit. Change the params variable to the best fit parameters, the snap when calling write_lf_test_emulators, and maybe the label (which I mostly used to record the way I calculated the penalty)
 * Run the last plot before the sweeps in train_emulator_5d-{redshift}.ipynb
 * Run combiningpenalties5-6.ipynb up to the “Old models, no dust” header (after finishing everything above for both redshifts)
 * Run the sweeps (last part) of train_emulator_5d-{redshift}.ipynb, changed combined_key to the combined best fit key in pred_params 
