@@ -19,3 +19,7 @@ Order to run files:
     * I also ran this file for all other simulations at all snaps (except 60) with the combined best fit params
     * If calculating X without dust, I just changed the file manually (made calculate_x_dust return Xs instead X_dust, changed the filename to include “nodust”)
 * Run the rest of combiningpenalties5-6.ipynb
+
+Added code:
+* making_x_files calculates X for the models from the literature and stores the values in a file
+* copying_stuff_with_x has code to make the final two figures
